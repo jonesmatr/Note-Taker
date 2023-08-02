@@ -29,6 +29,7 @@ app.get('/api/notes', (req, res) => {
 });
 
 app.post('/api/notes', (req, res) => {
+    console.log("Received a new note:", req.body);
     const newNote = req.body;
     newNote.id = Date.now().toString();
     
