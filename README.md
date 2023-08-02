@@ -21,8 +21,6 @@ The site can be accessed [here](https://secret-mesa-81373-68f8998a8913.herokuapp
 4. Run `node server.js` to start the server.
 5. Open your browser and visit `http://localhost:3000` to access the application.
 
-## How to Use
-
 ## Accessing and Using the Note Taker Website
 
 ### Prerequisites:
