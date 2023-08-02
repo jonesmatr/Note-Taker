@@ -3,9 +3,9 @@
 ## Description
 A simple application to write, save, and delete notes. This application uses an Express.js back end and saves/retrieves note data from a JSON file.
 
-The site can be accessed [here](https://github.com/jonesmatr/Note-Taker.git).
+The site can be accessed [here](https://secret-mesa-81373-68f8998a8913.herokuapp.com/notest).
 
-![Note-Taker](./assets/img/Website-Screenshot.jpg)
+![Note-Taker](./public/assets/img/Website-Screenshot.jpg)
 
 ## User Story
 ```
