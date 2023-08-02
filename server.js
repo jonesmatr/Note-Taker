@@ -30,15 +30,20 @@ app.get('/api/notes', (req, res) => {
 
 app.post('/api/notes', (req, res) => {
     const newNote = req.body;
-    // Using a timestamp as a unique ID for simplicity
     newNote.id = Date.now().toString();
     
     fs.readFile(path.join(__dirname, 'db', 'db.json'), 'utf-8', (err, data) => {
-        if (err) throw err;
+        if (err) {
+            console.error("Error reading db.json:", err);
+            return res.status(500).json({ error: "Failed to read the database file." });
+        }
         const notes = JSON.parse(data);
         notes.push(newNote);
         fs.writeFile(path.join(__dirname, 'db', 'db.json'), JSON.stringify(notes), (err) => {
-            if (err) throw err;
+            if (err) {
+                console.error("Error writing to db.json:", err);
+                return res.status(500).json({ error: "Failed to save the note to the database." });
+            }
             res.json(newNote);
         });
     });

@@ -3,6 +3,8 @@
 ## Description
 A simple application to write, save, and delete notes. This application uses an Express.js back end and saves/retrieves note data from a JSON file.
 
+The site can be accessed [here](https://github.com/jonesmatr/Note-Taker.git).
+
 ## User Story
 ```
 AS A small business owner
