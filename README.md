@@ -7,13 +7,6 @@ The site can be accessed [here](https://secret-mesa-81373-68f8998a8913.herokuapp
 
 ![Note-Taker](./public/assets/img/Website-Screenshot.jpg)
 
-## User Story
-```
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-```
-
 ## Features
 
 - Write and save notes.
