@@ -5,6 +5,8 @@ A simple application to write, save, and delete notes. This application uses an 
 
 The site can be accessed [here](https://github.com/jonesmatr/Note-Taker.git).
 
+![Note-Taker](./assets/img/Website-Screenshot.jpg)
+
 ## User Story
 ```
 AS A small business owner
