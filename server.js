@@ -28,6 +28,7 @@ app.get('/api/notes', (req, res) => {
     });
 });
 
+// POST Routes and writing to db.json
 app.post('/api/notes', (req, res) => {
     console.log("Received a new note:", req.body);
     const newNote = req.body;
@@ -50,6 +51,7 @@ app.post('/api/notes', (req, res) => {
     });
 });
 
+// DELETE Routes and deleting from db.json
 app.delete('/api/notes/:id', (req, res) => {
     const noteId = req.params.id;
     
@@ -65,6 +67,7 @@ app.delete('/api/notes/:id', (req, res) => {
 
 });
 
+// This is the default route, if none of the other routes match it will return the index page
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
